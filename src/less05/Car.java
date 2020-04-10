@@ -51,8 +51,14 @@ public class Car implements Runnable {
                     System.out.println(this.name + " WIN");
                     cdlFinish.countDown();
                 } else {
-                    cdlFinish.countDown();
                     System.out.println(this.name + " закончил гонку.");
+                    cdlFinish.countDown();
+                    try {
+                        Thread.sleep(10);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
                 }
 
 

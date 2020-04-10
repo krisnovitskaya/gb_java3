@@ -6,7 +6,7 @@ import java.util.concurrent.CountDownLatch;
 
 
 public class MainClass {
-    public static final int CARS_COUNT = 9;
+    public static final int CARS_COUNT = 139;
     public static CountDownLatch cdlStart = new CountDownLatch(CARS_COUNT);
     public static CountDownLatch cdlFinish = new CountDownLatch(CARS_COUNT);
     public static void main(String[] args) {
